@@ -4,9 +4,17 @@ import SwiftUI
 
 @main
 struct MyApp: App {
+    private let coordinator = MainCoordinator(rootNavigationController: .init())
+
+    init() {
+        coordinator.start()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationController(
+                rootNavigationController: coordinator.rootNavigationController
+            )
         }
     }
 }
