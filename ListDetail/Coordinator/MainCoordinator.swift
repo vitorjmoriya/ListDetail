@@ -10,6 +10,6 @@ class MainCoordinator {
     }
 
     func start() {
-        self.rootNavigationController.pushViewController(UIHostingController(rootView: ContentView()), animated: false)
+        self.rootNavigationController.pushViewController(ListController(coordinator: self), animated: false)
     }
 }
