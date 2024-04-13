@@ -29,8 +29,10 @@ class ListController: UIHostingController<ListView> {
     }
 
     func setupActions() {
-        viewModel.onTapItemList = { id in
-            // TODO: implement navigation
+        viewModel.onTapItemList = { [weak self] id in
+            guard let self else { return }
+
+            self.coordinator?.navigateToDetail(id: id)
         }
     }
 
