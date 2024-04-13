@@ -9,13 +9,13 @@ class ListService {
         self.viewModel = viewModel
     }
 
-    @MainActor func fetchData () async {
+    @MainActor func fetchData() async {
         viewModel.state = .loading
 
         do {
             let data = try await CatWorker.fetchAllCatsData()
 
-            let cardsViewModel: [Card.ViewModel] = data.map{ item in
+            let cardsViewModel: [Card.ViewModel] = data.map { item in
                 .init(title: item.id, subtitle: item.tags.joined(separator: ","))
             }
 
