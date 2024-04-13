@@ -21,7 +21,7 @@ struct ListView: View {
             VStack(alignment: .center, spacing: 10) {
                 ForEach(data, id: \.title) { item in
                     Card(viewModel: item) {
-                        viewModel.onTapItemList?(item.title)
+                        viewModel.onTapItemList?(item.title, item.subtitle)
                     }
                 }
             }
@@ -32,7 +32,7 @@ struct ListView: View {
 
 extension ListView {
     class ViewModel: ObservableObject {
-        var onTapItemList: ((String) -> Void)?
+        var onTapItemList: ((String, String) -> Void)?
 
         @Published var state: State = .loading
     }

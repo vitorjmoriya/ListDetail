@@ -29,10 +29,10 @@ class ListController: UIHostingController<ListView> {
     }
 
     func setupActions() {
-        viewModel.onTapItemList = { [weak self] id in
+        viewModel.onTapItemList = { [weak self] id, tags in
             guard let self else { return }
 
-            self.coordinator?.navigateToDetail(id: id)
+            self.coordinator?.navigateToDetail(id: id, tags: tags)
         }
     }
 

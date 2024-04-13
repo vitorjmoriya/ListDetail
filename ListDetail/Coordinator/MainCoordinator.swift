@@ -9,7 +9,7 @@ class MainCoordinator {
         self.rootNavigationController.setViewControllers([ListController(coordinator: self)], animated: false)
     }
 
-    func navigateToDetail(id: String) {
-        self.rootNavigationController.pushViewController(DetailController(coordinator: self, id: id), animated: true)
+    func navigateToDetail(id: String, tags: String) {
+        self.rootNavigationController.pushViewController(DetailController(coordinator: self, id: id, tags: tags), animated: true)
     }
 }
