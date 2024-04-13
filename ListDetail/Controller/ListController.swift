@@ -34,6 +34,12 @@ class ListController: UIHostingController<ListView> {
 
             self.coordinator?.navigateToDetail(id: id, tags: tags)
         }
+
+        viewModel.onRetry = { [weak service] in
+            Task {
+                await service?.fetchData()
+            }
+        }
     }
 
     @MainActor required dynamic init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

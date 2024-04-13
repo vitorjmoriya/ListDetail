@@ -10,7 +10,7 @@ struct ListView: View {
         case .loading:
             ProgressView()
         case .error:
-            EmptyView()
+            ErrorMessage(onRetry: viewModel.onRetry)
         case .success(let data):
             renderList(data: data)
         }
@@ -33,6 +33,7 @@ struct ListView: View {
 extension ListView {
     class ViewModel: ObservableObject {
         var onTapItemList: ((String, String) -> Void)?
+        var onRetry: (() -> Void)?
 
         @Published var state: State = .loading
     }
