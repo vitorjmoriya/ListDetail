@@ -10,6 +10,9 @@ class MainCoordinator {
     }
 
     func navigateToDetail(id: String, tags: String) {
-        self.rootNavigationController.pushViewController(DetailController(coordinator: self, id: id, tags: tags), animated: true)
+        self.rootNavigationController.pushViewController(
+            DetailController(coordinator: self, id: id, tags: tags),
+            animated: true
+        )
     }
 }
