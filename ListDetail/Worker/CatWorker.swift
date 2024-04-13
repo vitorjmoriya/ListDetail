@@ -5,10 +5,10 @@ import Foundation
 enum CatWorker {
     static let decoder = JSONDecoder()
 
-    static let apiRoot = "https://cataas.com/api"
+    static let apiRoot = "https://cataas.com"
 
     static func fetchAllCatsData(limit: Int = 10) async throws -> [Data] {
-        guard let url: URL = .init(string: "\(apiRoot)/cats?limit=\(limit)") else {
+        guard let url: URL = .init(string: "\(apiRoot)/api/cats?limit=\(limit)") else {
             throw APIError.invalidURL
         }
 
@@ -19,6 +19,14 @@ enum CatWorker {
 
             return try decoder.decode([Data].self, from: data)
         }
+    }
+
+    static func getCatPhotoURL(id: String) throws -> URL {
+        guard let url = URL(string: "\(apiRoot)/cat/\(id)") else {
+            throw APIError.invalidURL
+        }
+
+        return url
     }
 }
 
