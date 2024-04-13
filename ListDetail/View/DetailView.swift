@@ -5,6 +5,8 @@ import SwiftUI
 struct DetailView: View {
     @ObservedObject var viewModel: ViewModel
 
+    @SwiftUI.State var imageId = UUID()
+
     var body: some View {
         switch viewModel.state {
         case .loading:
@@ -18,13 +20,22 @@ struct DetailView: View {
 
     @ViewBuilder private func renderSuccessView(url: URL) -> some View {
         VStack(spacing: 10) {
-            AsyncImage(url: url) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
-            } placeholder: {
-                ProgressView()
+            AsyncImage(url: url) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                default:
+                    ErrorMessage {
+                        self.imageId = UUID()
+                    }
+                }
             }
+            .id(imageId)
+
             Text("Tags: \(viewModel.tags)")
         }
         .padding(.horizontal, 10)
