@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CB2BCB058F0058773F /* DetailController.swift */; };
+		5F8005CE2BCB05970058773F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CD2BCB05970058773F /* DetailView.swift */; };
 		5FC0956B2BCB03E300EF0616 /* CatWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7DA262BCAF079004F9D19 /* CatWorker.swift */; };
 		5FC0956C2BCB03E300EF0616 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D392C2BC4CC9600E67929 /* ListService.swift */; };
 		5FC0956D2BCB03E300EF0616 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7EAC82BC4C75A00758654 /* Card.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		5F0D392C2BC4CC9600E67929 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		5F8005CB2BCB058F0058773F /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		5F8005CD2BCB05970058773F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5FA7EABF2BC4C23600758654 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5FA7EAC42BC4C41C00758654 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		5FA7EAC82BC4C75A00758654 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		5FA7EAC12BC4C3B200758654 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5F8005CB2BCB058F0058773F /* DetailController.swift */,
 				5FA7EAC42BC4C41C00758654 /* ListController.swift */,
 			);
 			path = Controller;
@@ -62,6 +67,7 @@
 		5FA7EAC22BC4C3C200758654 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5F8005CD2BCB05970058773F /* DetailView.swift */,
 				5FF3004A2BC4AC280023468D /* ListView.swift */,
 			);
 			path = View;
@@ -204,10 +210,12 @@
 				5FC0956B2BCB03E300EF0616 /* CatWorker.swift in Sources */,
 				5FC0956C2BCB03E300EF0616 /* ListService.swift in Sources */,
 				5FC0956D2BCB03E300EF0616 /* Card.swift in Sources */,
+				5F8005CE2BCB05970058773F /* DetailView.swift in Sources */,
 				5FC0956E2BCB03E300EF0616 /* MainCoordinator.swift in Sources */,
 				5FC0956F2BCB03E300EF0616 /* ListView.swift in Sources */,
 				5FC095722BCB03E300EF0616 /* ListController.swift in Sources */,
 				5FC095772BCB03E300EF0616 /* SceneDelegate.swift in Sources */,
+				5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */,
 				5FC095782BCB03E300EF0616 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
