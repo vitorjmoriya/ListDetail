@@ -5,6 +5,7 @@ import SwiftUI
 class ListController: UIHostingController<ListView> {
     private weak var coordinator: MainCoordinator?
 
+    private let viewModel: ListView.ViewModel
     private let service: ListService
 
     init(coordinator: MainCoordinator) {
@@ -13,7 +14,10 @@ class ListController: UIHostingController<ListView> {
         let viewModel = ListView.ViewModel()
 
         self.service = .init(viewModel: viewModel)
+        self.viewModel = viewModel
         super.init(rootView: .init(viewModel: viewModel))
+
+        setupActions()
     }
 
     override func viewDidLoad() {
@@ -21,6 +25,12 @@ class ListController: UIHostingController<ListView> {
 
         Task {
             await self.service.fetchData()
+        }
+    }
+
+    func setupActions() {
+        viewModel.onTapItemList = { id in
+            // TODO: implement navigation
         }
     }
 

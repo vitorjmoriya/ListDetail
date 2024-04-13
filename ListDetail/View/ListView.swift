@@ -20,7 +20,9 @@ struct ListView: View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
                 ForEach(data, id: \.title) { item in
-                    Card(viewModel: item)
+                    Card(viewModel: item) {
+                        viewModel.onTapItemList?(item.title)
+                    }
                 }
             }
             .padding(.horizontal, 10)
@@ -30,7 +32,7 @@ struct ListView: View {
 
 extension ListView {
     class ViewModel: ObservableObject {
-        var onTapItemList: ((Int) -> Void)?
+        var onTapItemList: ((String) -> Void)?
 
         @Published var state: State = .loading
     }
