@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0D392D2BC4CC9600E67929 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D392C2BC4CC9600E67929 /* ListService.swift */; };
 		5FA7EABE2BC4C12800758654 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7EABD2BC4C12800758654 /* NavigationController.swift */; };
 		5FA7EAC02BC4C23600758654 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7EABF2BC4C23600758654 /* MainCoordinator.swift */; };
 		5FA7EAC52BC4C41C00758654 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7EAC42BC4C41C00758654 /* ListController.swift */; };
 		5FA7EAC92BC4C75A00758654 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA7EAC82BC4C75A00758654 /* Card.swift */; };
 		5FDFB6262BC4BF6E003159B6 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFB6252BC4BF6E003159B6 /* App.swift */; };
+		5FE7DA272BCAF079004F9D19 /* CatWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7DA262BCAF079004F9D19 /* CatWorker.swift */; };
 		5FF3004B2BC4AC280023468D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF3004A2BC4AC280023468D /* ListView.swift */; };
 		5FF3004D2BC4AC2A0023468D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF3004C2BC4AC2A0023468D /* Assets.xcassets */; };
 		5FF300512BC4AC2A0023468D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF300502BC4AC2A0023468D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F0D392C2BC4CC9600E67929 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		5FA7EABD2BC4C12800758654 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		5FA7EABF2BC4C23600758654 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5FA7EAC42BC4C41C00758654 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		5FA7EAC82BC4C75A00758654 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5FDFB6252BC4BF6E003159B6 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		5FE7DA262BCAF079004F9D19 /* CatWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorker.swift; sourceTree = "<group>"; };
 		5FF300452BC4AC280023468D /* ListDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF3004A2BC4AC280023468D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		5FF3004C2BC4AC2A0023468D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0D392B2BC4CC8800E67929 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5F0D392C2BC4CC9600E67929 /* ListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		5FA7EAC12BC4C3B200758654 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +86,14 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		5FE7DA252BCAF070004F9D19 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				5FE7DA262BCAF079004F9D19 /* CatWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
 		5FF3003C2BC4AC280023468D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +113,8 @@
 		5FF300472BC4AC280023468D /* ListDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5FE7DA252BCAF070004F9D19 /* Worker */,
+				5F0D392B2BC4CC8800E67929 /* Service */,
 				5FA7EAC72BC4C75100758654 /* Component */,
 				5FA7EAC32BC4C3CC00758654 /* Coordinator */,
 				5FA7EAC22BC4C3C200758654 /* View */,
@@ -184,8 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF3004B2BC4AC280023468D /* ListView.swift in Sources */,
+				5F0D392D2BC4CC9600E67929 /* ListService.swift in Sources */,
 				5FA7EAC92BC4C75A00758654 /* Card.swift in Sources */,
 				5FA7EAC52BC4C41C00758654 /* ListController.swift in Sources */,
+				5FE7DA272BCAF079004F9D19 /* CatWorker.swift in Sources */,
 				5FA7EAC02BC4C23600758654 /* MainCoordinator.swift in Sources */,
 				5FA7EABE2BC4C12800758654 /* NavigationController.swift in Sources */,
 				5FDFB6262BC4BF6E003159B6 /* App.swift in Sources */,

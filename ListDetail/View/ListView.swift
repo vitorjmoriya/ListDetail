@@ -11,8 +11,19 @@ struct ListView: View {
             ProgressView()
         case .error:
             EmptyView()
-        case .success:
-            EmptyView()
+        case .success(let data):
+            renderList(data: data)
+        }
+    }
+
+    @ViewBuilder private func renderList(data: [Card.ViewModel]) -> some View {
+        ScrollView {
+            VStack(alignment: .center, spacing: 10) {
+                ForEach(data, id: \.title) { item in
+                    Card(viewModel: item)
+                }
+            }
+            .padding(.horizontal, 10)
         }
     }
 }
@@ -21,13 +32,13 @@ extension ListView {
     class ViewModel: ObservableObject {
         var onTapItemList: ((Int) -> Void)?
 
-        var state: State = .loading
+        @Published var state: State = .loading
     }
 
     enum State {
         case loading
         case error
-        case success
+        case success([Card.ViewModel])
     }
 }
 
