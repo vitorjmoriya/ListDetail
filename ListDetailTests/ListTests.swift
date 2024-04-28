@@ -22,8 +22,8 @@ final class ListTests: XCTestCase {
         assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "error")
 
         viewModel.state = .success([
-            .init(title: "item 1", subtitle: "foobar"),
-            .init(title: "item 2", subtitle: "foobar 2")
+            .init(imageURL: nil, title: "item 1", subtitle: "foobar"),
+            .init(imageURL: nil, title: "item 2", subtitle: "foobar 2")
         ])
 
         assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "success")
