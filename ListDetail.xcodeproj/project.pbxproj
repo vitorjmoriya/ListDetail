@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */; };
 		5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CB2BCB058F0058773F /* DetailController.swift */; };
 		5F8005CE2BCB05970058773F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CD2BCB05970058773F /* DetailView.swift */; };
 		5F8005D22BCB0F9F0058773F /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005D12BCB0F9F0058773F /* DetailService.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		5F0D392C2BC4CC9600E67929 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerProtocol.swift; sourceTree = "<group>"; };
 		5F8005CB2BCB058F0058773F /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		5F8005CD2BCB05970058773F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5F8005D12BCB0F9F0058773F /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5FE7DA262BCAF079004F9D19 /* CatWorker.swift */,
+				5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				5FC0956D2BCB03E300EF0616 /* Card.swift in Sources */,
 				5F8005CE2BCB05970058773F /* DetailView.swift in Sources */,
 				5F8005D52BCB29AD0058773F /* ErrorMessage.swift in Sources */,
+				5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */,
 				5FC0956E2BCB03E300EF0616 /* MainCoordinator.swift in Sources */,
 				5FC0956F2BCB03E300EF0616 /* ListView.swift in Sources */,
 				5FC095722BCB03E300EF0616 /* ListController.swift in Sources */,
