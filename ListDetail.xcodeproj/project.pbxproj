@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */; };
+		5F3DD83C2BDEF1BD006B0D68 /* CatWorkerJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */; };
+		5F3DD83E2BDEF1DF006B0D68 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3DD83D2BDEF1DF006B0D68 /* data.json */; };
 		5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CB2BCB058F0058773F /* DetailController.swift */; };
 		5F8005CE2BCB05970058773F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CD2BCB05970058773F /* DetailView.swift */; };
 		5F8005D22BCB0F9F0058773F /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005D12BCB0F9F0058773F /* DetailService.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		5F0D392C2BC4CC9600E67929 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerProtocol.swift; sourceTree = "<group>"; };
+		5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerJSON.swift; sourceTree = "<group>"; };
+		5F3DD83D2BDEF1DF006B0D68 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		5F8005CB2BCB058F0058773F /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		5F8005CD2BCB05970058773F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5F8005D12BCB0F9F0058773F /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 				5F8005D12BCB0F9F0058773F /* DetailService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		5F7435F62BDEDF2400D78D57 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5F3DD83D2BDEF1DF006B0D68 /* data.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		5F8005DB2BCB2E270058773F /* ListDetailTests */ = {
@@ -135,6 +147,7 @@
 			children = (
 				5FE7DA262BCAF079004F9D19 /* CatWorker.swift */,
 				5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */,
+				5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -160,6 +173,7 @@
 		5FF300472BC4AC280023468D /* ListDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5F7435F62BDEDF2400D78D57 /* Data */,
 				5FE7DA252BCAF070004F9D19 /* Worker */,
 				5F0D392B2BC4CC8800E67929 /* Service */,
 				5FA7EAC72BC4C75100758654 /* Component */,
@@ -278,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F3DD83E2BDEF1DF006B0D68 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +342,7 @@
 				5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */,
 				5FC0956E2BCB03E300EF0616 /* MainCoordinator.swift in Sources */,
 				5FC0956F2BCB03E300EF0616 /* ListView.swift in Sources */,
+				5F3DD83C2BDEF1BD006B0D68 /* CatWorkerJSON.swift in Sources */,
 				5FC095722BCB03E300EF0616 /* ListController.swift in Sources */,
 				5FC095772BCB03E300EF0616 /* SceneDelegate.swift in Sources */,
 				5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */,
