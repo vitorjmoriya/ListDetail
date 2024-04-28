@@ -24,6 +24,14 @@ The only dependency not automatically installed should be `SwiftLint`, in order 
 brew install swiftlint
 ```
 
+# Data Sources
+This app uses two data sources to populate the `ListView`
+However both data sources use [Cat as a service](https://cataas.com/) to fetch the image for each item in the List and Detail page
+
 ## API
 
-This project uses [Cat as a service](https://cataas.com/) in order to showcase state and data-fetching
+This project uses [Cat as a service](https://cataas.com/) in order to showcase state and data-fetching and `/api/cats` to fetch the List data
+
+## JSON
+
+This project uses a provided [JSON](https://github.com/vitorjmoriya/ListDetail/blob/main/ListDetail/Data/data.json) for the initial List data
