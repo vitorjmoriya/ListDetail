@@ -6,7 +6,19 @@ class MainCoordinator {
     let rootNavigationController: UINavigationController = .init()
 
     func start() {
-        self.rootNavigationController.setViewControllers([ListController(coordinator: self)], animated: false)
+        let tabController: UITabBarController = .init()
+
+        let apiListController = ListController(coordinator: self, dataSource: .api)
+        apiListController.tabBarItem.title = "API"
+        let jsonListController = ListController(coordinator: self, dataSource: .json)
+        jsonListController.tabBarItem.title = "JSON"
+
+        tabController.setViewControllers([
+            apiListController,
+            jsonListController
+        ], animated: false)
+
+        self.rootNavigationController.setViewControllers([tabController], animated: false)
     }
 
     func navigateToDetail(id: String, tags: String) {

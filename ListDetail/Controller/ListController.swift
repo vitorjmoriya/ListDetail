@@ -8,12 +8,12 @@ class ListController: UIHostingController<ListView> {
     private let viewModel: ListView.ViewModel
     private let service: ListService
 
-    init(coordinator: MainCoordinator) {
+    init(coordinator: MainCoordinator, dataSource: ListService.DataSource) {
         self.coordinator = coordinator
 
         let viewModel = ListView.ViewModel()
 
-        self.service = .init(viewModel: viewModel)
+        self.service = .init(viewModel: viewModel, dataSource: dataSource)
         self.viewModel = viewModel
         super.init(rootView: .init(viewModel: viewModel))
 

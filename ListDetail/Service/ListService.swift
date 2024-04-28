@@ -6,9 +6,14 @@ class ListService {
     private let viewModel: ListView.ViewModel
     private let worker: CatWorkerProtocol
 
-    init(viewModel: ListView.ViewModel) {
+    init(viewModel: ListView.ViewModel, dataSource: DataSource) {
         self.viewModel = viewModel
-        self.worker = CatWorker()
+        switch dataSource {
+        case .api:
+            self.worker = CatWorker()
+        case .json:
+            self.worker = CatWorkerJSON()
+        }
     }
 
     @MainActor func fetchData() async {
@@ -37,5 +42,12 @@ class ListService {
         } catch {
             viewModel.state = .error
         }
+    }
+}
+
+extension ListService {
+    enum DataSource {
+        case api
+        case json
     }
 }
