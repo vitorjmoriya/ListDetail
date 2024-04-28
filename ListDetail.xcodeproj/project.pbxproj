@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F110FA42BDEFB5A008BC0D7 /* CatWorkerDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F110FA32BDEFB5A008BC0D7 /* CatWorkerDataTests.swift */; };
 		5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */; };
 		5F3DD83C2BDEF1BD006B0D68 /* CatWorkerJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */; };
 		5F3DD83E2BDEF1DF006B0D68 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3DD83D2BDEF1DF006B0D68 /* data.json */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5F0D392C2BC4CC9600E67929 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		5F110FA32BDEFB5A008BC0D7 /* CatWorkerDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerDataTests.swift; sourceTree = "<group>"; };
 		5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerProtocol.swift; sourceTree = "<group>"; };
 		5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerJSON.swift; sourceTree = "<group>"; };
 		5F3DD83D2BDEF1DF006B0D68 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				5F8005DC2BCB2E270058773F /* ListTests.swift */,
 				5F8005E62BCB31E10058773F /* DetailTests.swift */,
+				5F110FA32BDEFB5A008BC0D7 /* CatWorkerDataTests.swift */,
 			);
 			path = ListDetailTests;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F110FA42BDEFB5A008BC0D7 /* CatWorkerDataTests.swift in Sources */,
 				5F8005E72BCB31E10058773F /* DetailTests.swift in Sources */,
 				5F8005DD2BCB2E270058773F /* ListTests.swift in Sources */,
 			);
