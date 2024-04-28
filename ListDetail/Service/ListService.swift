@@ -16,7 +16,19 @@ class ListService {
             let data = try await CatWorker.fetchAllCatsData()
 
             let cardsViewModel: [Card.ViewModel] = data.map { item in
-                .init(title: item.id, subtitle: item.tags.joined(separator: ","))
+                var imageURL: URL?
+
+                do {
+                    imageURL = try CatWorker.getCatPhotoURL(id: item.id, width: 50, height: 50)
+                } catch {
+                    // TODO: Log error
+                }
+
+                return .init(
+                    imageURL: imageURL,
+                    title: item.id,
+                    subtitle: item.tags.joined(separator: ",")
+                )
             }
 
             viewModel.state = .success(cardsViewModel)

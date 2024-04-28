@@ -21,8 +21,23 @@ enum CatWorker {
         }
     }
 
-    static func getCatPhotoURL(id: String) throws -> URL {
-        guard let url = URL(string: "\(apiRoot)/cat/\(id)") else {
+    static func getCatPhotoURL(id: String, width: Int? = nil, height: Int? = nil) throws -> URL {
+        let baseURL = "\(apiRoot)/cat/\(id)"
+        var parameters = [String]()
+
+        if let width {
+            parameters.append("width=\(width)")
+        }
+
+        if let height {
+            parameters.append("height=\(height)")
+        }
+
+        let fullURL = parameters.isEmpty
+            ? "\(baseURL)"
+            : "\(baseURL)?\(parameters.joined(separator: "&"))"
+
+        guard let url = URL(string: fullURL) else {
             throw APIError.invalidURL
         }
 
