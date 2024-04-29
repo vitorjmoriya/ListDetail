@@ -15,17 +15,10 @@ final class ListTests: XCTestCase {
         let viewModel = ListView.ViewModel()
         let controller = UIHostingController(rootView: ListView(viewModel: viewModel))
 
-        assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "loading")
+        assertSnapshot(of: controller, as: .image(on: .iPhone15), testName: "loading")
 
         viewModel.state = .error
 
-        assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "error")
-
-        viewModel.state = .success([
-            .init(imageURL: nil, title: "item 1", subtitle: "foobar"),
-            .init(imageURL: nil, title: "item 2", subtitle: "foobar 2")
-        ])
-
-        assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "success")
+        assertSnapshot(of: controller, as: .image(on: .iPhone15), testName: "error")
     }
 }

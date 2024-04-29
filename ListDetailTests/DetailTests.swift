@@ -15,10 +15,10 @@ final class DetailTests: XCTestCase {
         let viewModel = DetailView.ViewModel(tags: "foobar")
         let controller = UIHostingController(rootView: DetailView(viewModel: viewModel))
 
-        assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "loading")
+        assertSnapshot(of: controller, as: .image(on: .iPhone15), testName: "loading")
 
         viewModel.state = .success(.init(string: ".")!)
 
-        assertSnapshot(of: controller, as: .image(on: .iPhone13ProMax), testName: "invalid image")
+        assertSnapshot(of: controller, as: .image(on: .iPhone15), testName: "invalid image")
     }
 }

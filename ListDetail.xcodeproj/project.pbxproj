@@ -12,6 +12,7 @@
 		5F3DD83A2BDEDF5F006B0D68 /* CatWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */; };
 		5F3DD83C2BDEF1BD006B0D68 /* CatWorkerJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */; };
 		5F3DD83E2BDEF1DF006B0D68 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F3DD83D2BDEF1DF006B0D68 /* data.json */; };
+		5F6A88072BDF2ABB00DE3D13 /* SnapshotTesting+iPhone15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A88062BDF2ABB00DE3D13 /* SnapshotTesting+iPhone15.swift */; };
 		5F8005CC2BCB058F0058773F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CB2BCB058F0058773F /* DetailController.swift */; };
 		5F8005CE2BCB05970058773F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005CD2BCB05970058773F /* DetailView.swift */; };
 		5F8005D22BCB0F9F0058773F /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8005D12BCB0F9F0058773F /* DetailService.swift */; };
@@ -54,6 +55,7 @@
 		5F3DD8392BDEDF5F006B0D68 /* CatWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerProtocol.swift; sourceTree = "<group>"; };
 		5F3DD83B2BDEF1BD006B0D68 /* CatWorkerJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWorkerJSON.swift; sourceTree = "<group>"; };
 		5F3DD83D2BDEF1DF006B0D68 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		5F6A88062BDF2ABB00DE3D13 /* SnapshotTesting+iPhone15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapshotTesting+iPhone15.swift"; sourceTree = "<group>"; };
 		5F8005CB2BCB058F0058773F /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		5F8005CD2BCB05970058773F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5F8005D12BCB0F9F0058773F /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				5F8005DC2BCB2E270058773F /* ListTests.swift */,
 				5F8005E62BCB31E10058773F /* DetailTests.swift */,
 				5F110FA32BDEFB5A008BC0D7 /* CatWorkerDataTests.swift */,
+				5F6A88062BDF2ABB00DE3D13 /* SnapshotTesting+iPhone15.swift */,
 			);
 			path = ListDetailTests;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				5F110FA42BDEFB5A008BC0D7 /* CatWorkerDataTests.swift in Sources */,
 				5F8005E72BCB31E10058773F /* DetailTests.swift in Sources */,
 				5F8005DD2BCB2E270058773F /* ListTests.swift in Sources */,
+				5F6A88072BDF2ABB00DE3D13 /* SnapshotTesting+iPhone15.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
