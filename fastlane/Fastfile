@@ -1,0 +1,13 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Test app"
+  lane :test do
+    scan(
+      project: "ListDetail.xcodeproj",
+      devices: ["iPhone 15"],
+      scheme: "ListDetail",
+      clean: false,
+    )
+  end
+end
